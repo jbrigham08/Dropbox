@@ -1,0 +1,48 @@
+* {box-sizing: border-box;}
+
+body {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+
+}
+
+header div img {
+    height: 50px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 50%;
+}
+
+li {
+    display: inline;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+h3 {
+    position: relative;
+}
+
+.login {
+    justify-content: center;
+}
+
