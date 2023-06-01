@@ -6,76 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropbox Login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <div><img id="logo" src="dropbox.jpg" alt="Logo"></div>
         <nav>
-            <ul>
-                <li><a href="https://www.dropbox.com/login">Dropbox</a></li>
-            </ul>
+            <div class="navbar">
+                <img class="logo" src="dropbox.jpg" alt="logo">
+                <h2>Dropbox</h2>
+                <p class="alight-right">Sign Up</p>
+            </div>
         </nav>
     </header>
 
-<h2>Login or sign up</h2>
-
-    <div class="login"></div>
-        <form action="/action_page.php" target="_blank" method="get">
-            <button>Continue with Google</button><br><br>
-            <button>Continue with Apple</button><br><br>
-            <p>------- or --------</p><br><br>
-            <label for="Email">Email</label><br>
-            <input type="text" id="Email" name="Email" value=""><br>
-            <input type="submit" value="Continue">
+    <main class="form">
+        <div class="flex">
+            <h3>Login</h3>
+            <a href="#">or create an account</a>
+        </div>
+        <form>
+            <button class="btn"><img class="icons" src="google.jpg" alt="Google logo">Continue with Google</button>
+            <button class="btn"><img class="icons" src="apple3.jpg" alt="Apple logo">Continue with Apple</button>
+            <p class="or"><span>or</span></p>
+            <label for="other-email">Email</label>
+            <input class="email" type="email" name="other" id="other-email">  
         </form>
+        <button class="submit" type="button">Continue</button>
+    </main>
 
+    <footer>
+        <div class="footer">
+            <div>
+                <h3>Dropbox</h3>
+                <p>Desktop app</p>
+                <p>Mobile app</p>
+                <p>Integrations</p>
+                <p>Features</p>
+                <p>Solutions</p>
+                <p>Do more than store</p>
+                <p>Security</p>
+                <p>Advance access</p>  
+            </div>
+            <div>
+                <h3>Products</h3>
+                <p>Plus</p>
+                <p>Professional</p>
+                <p>Business</p>
+                <p>Enterprise</p>
+                <p>Dropbox Sign</p>
+                <p>DocSend</p>
+                <p>Plans</p>
+                <p>Product updates</p>  
+            </div>
+            <div>
+                <h3>Support</h3>
+                <p>Help center</p>
+                <p>Contact us</p>
+                <p>Privacy & terms</p>
+                <p>Cookie policy</p>
+                <p>Cookies & CCPA preferences</p>
+                <p>Sitemap</p>
+                <p>Learning resources</p>
+            </div>
+            <div>
+                <h3>Community</h3>
+                <p>Blog</p>
+                <p>Developers</p>
+                <p>Community forums</p>
+                <p>Referrals</p>
+                <p>Reseller partners</p>
+                <p>Integration partners</p>  
+            </div>
+            <div>
+                <h3>Company</h3>
+                <p>About us</p>
+                <p>Jobs</p>
+                <p>Investor relations</p>
+                <p>ESG</p>
+                <p>Find a partner</p> 
+            </div>
+        </div>
 
-<div id="footer" class="footer">
-    <h3 style="font-family: 'Source Sans Pro', sans-serif;">Dropbox</h2>
-        <a href="">Desktop App</a><br>
-        <a href="">Mobile app</a><br>
-        <a href="">Integrations</a><br>
-        <a href="">Features</a><br>
-        <a href="">Solutions</a><br>
-        <a href="">Do more than store</a><br>
-        <a href="">Security</a><br>
-        <a href="">Advance access</a>
-
-    <h3 style="font-family: 'Source Sans Pro', sans-serif;">Products</h2>
-        <a href="">Plus</a><br>
-        <a href="">Professional</a><br>
-        <a href="">Business</a><br>
-        <a href="">Enterprise</a><br>
-        <a href="">Dropbox Sign</a><br>
-        <a href="">DocSend</a><br>
-        <a href="">Plans</a><br>
-        <a href="">Product Updates</a>
-
-    <h3 style="font-family: 'Source Sans Pro', sans-serif;">Support</h2>
-        <a href="">Help center</a><br>
-        <a href="">Contact us</a><br>
-        <a href="">Privacy & terms</a><br>
-        <a href="">Cookie policy</a><br>
-        <a href="">Cookies & CCPA preferences</a><br>
-        <a href="">Sitemap</a><br>
-        <a href="">Learning resources</a><br>
-
-    <h3 style="font-family: 'Source Sans Pro', sans-serif;">Community</h2>
-        <a href="">Blog</a><br>
-        <a href="">Developers</a><br>
-        <a href="">Community forums</a><br>
-        <a href="">Referrals</a><br>
-        <a href="">Reseller partners</a><br>
-        <a href="">Integration partners</a><br>
-        
-    <h3 style="font-family: 'Source Sans Pro', sans-serif;">Company</h2>
-        <a href="">About us</a><br>
-        <a href="">Jobs</a><br>
-        <a href="">Investor relations</a><br>
-        <a href="">ESG</a><br>
-        <a href="">Find a partner</a>
-
-    
-</div>
+        <div class="social">
+            <a href="http://www.twitter.com/Dropbox" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="http://www.facebook.com/Dropbox" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="http://www.youtube.com/user/dropbox" target="_blank">
+            <i class="fa-brands fa-youtube"></i></a>
+            <hr class="social-hr">
+            <p><a href="#"><i class="fa-solid fa-globe"></i>English (United States)<i class="fa-solid fa-angle-right"></i></a></p>
+        </div>
+    </footer>
 </body>
 </html>
